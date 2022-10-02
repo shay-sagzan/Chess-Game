@@ -1,0 +1,108 @@
+body {
+  position: relative;
+  display: flexbox;
+}
+
+table {
+  margin-left: revert;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.light-cell {
+  background: rgba(193, 165, 119, 0.654);
+  width: 48px;
+  height: 48px;
+  user-select: none;
+}
+
+.dark-cell {
+  background: #9d571b;
+  width: 48px;
+  height: 48px;
+  user-select: none;
+}
+
+.selected {
+  background: rgb(211, 206, 53);
+}
+
+.possible-move {
+  background: rgba(98, 148, 182, 0.746);
+}
+
+.winner-dialog {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 50;
+  border-radius: 10px;
+  width: max-content;
+}
+
+.header {
+  text-align: center;
+}
+
+.eatenWhitePieces {
+  display: inline-block;
+  background-color: rgba(128, 128, 128, 0.2);
+  height: 200px;
+  width: 300px;
+  text-align: center;
+  float: left;
+}
+
+.eatenBlackPieces {
+  display: inline-block;
+  background-color: rgba(128, 128, 128, 0.2);
+  height: 200px;
+  width: 300px;
+  text-align: center;
+  float: right;
+}
+
+.checkPos {
+  background-color: red;
+  display: flex;
+  width: 80px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  margin-top: 420px;
+  margin-left: 750px;
+}
+
+.reset-btn {
+  display: flex;
+  position: absolute;
+  margin-top: 372px;
+  margin-left: 180px;
+  background: chartreuse;
+  border-radius: 115px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+}
+
+.sub-header {
+  height: 30px;
+}
+
+.black-eaten-img {
+  width: 30px;
+  height: 30px;
+  justify-items: inherit;
+  display: inline-block;
+}
+
+.white-eaten-img {
+  width: 30px;
+  height: 30px;
+}
